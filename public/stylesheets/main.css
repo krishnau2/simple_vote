@@ -1,0 +1,60 @@
+/* 
+    Document   : main
+    Created on : 19 Jul, 2011, 10:29:44 PM
+    Author     : kichu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #a2979e;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    background-color: #0f020b;
+}
+
+.wrapper{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 800px;
+    background-color: white;
+}
+.left_side{
+    width: 300px;
+    min-height: 535px;
+    background-image: url(/images/body_left_bg.jpg);
+    float: left;
+    position: fixed;
+}
+.right_side{
+    width: 600px;
+    min-height: 535px;
+    float: right;
+    background-color: wheat;
+}
+.left_content{
+    width: 600px;
+    min-height: 535px;
+    margin-top: 30px;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.navigation{
+    width: 600px;
+    height: 30px;
+    background-color: silver;
+    position: fixed;
+}

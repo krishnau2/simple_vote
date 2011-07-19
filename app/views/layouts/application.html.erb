@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SimpleVote</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>SimpleVote</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left_side"></div>
+      <div class="right_side">
+        <div class="navigation">
+          <table>
+            <tr>
+              <td><%= link_to 'Home',root_path %></td>
+              <td><%= link_to 'Create',new_question_path %></td>
+              <td><%= link_to 'Vote' %></td>
+              <td><%= link_to 'About' %></td>
+            </tr>
+          </table>
+        </div>
+        <div class="left_content">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

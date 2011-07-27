@@ -25,12 +25,19 @@ body {
     background-color: #0f020b;
 }
 
+body a{
+    color: white;
+}
+body a:hover{
+    color: #a2979e;
+    background-color: white;
+}
 .wrapper{
     width: 900px;
     margin-left: auto;
     margin-right: auto;
     min-height: 800px;
-    background-color: white;
+    /*    background-color: white;*/
 }
 .left_side{
     width: 300px;
@@ -43,7 +50,8 @@ body {
     width: 600px;
     min-height: 535px;
     float: right;
-    background-color: wheat;
+    color: white;
+    /*    background-color: wheat;*/
 }
 .left_content{
     width: 600px;
@@ -55,6 +63,30 @@ body {
 .navigation{
     width: 600px;
     height: 30px;
-    background-color: silver;
+    background-color: #0f020b;
     position: fixed;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+.navigation td{
+    background-color: white;
+    padding: 5px;
+}
+.navigation td:hover{
+    background-color: #a2979e;
+    color: white;
+}
+.navigation td:hover a{
+    background-color: #a2979e;
+    color: white;
+}
+.navigation a{
+    text-decoration: none;
+}
+.navigation a:hover{
+    text-decoration: none;
+    background-color: #a2979e;
+    color: white;
 }

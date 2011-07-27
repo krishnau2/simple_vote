@@ -26,11 +26,14 @@ body {
 }
 
 body a{
-    color: white;
+    color: green;
+}
+body a:visited{
+    color:green;
 }
 body a:hover{
-    color: #a2979e;
-    background-color: white;
+    color: white;
+    background-color: green;
 }
 .wrapper{
     width: 900px;
@@ -84,9 +87,13 @@ body a:hover{
 }
 .navigation a{
     text-decoration: none;
+    color: #a2979e;
 }
 .navigation a:hover{
     text-decoration: none;
     background-color: #a2979e;
     color: white;
+}
+.navigation a:visited{
+   color: #a2979e;
 }

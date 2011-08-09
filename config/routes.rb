@@ -2,6 +2,8 @@ SimpleVote::Application.routes.draw do
   resources :questions
 
   get "home/index"
+  match '/vote/:id' => 'vote#index', :as => :vote
+  match '/vote/create' => 'vote#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

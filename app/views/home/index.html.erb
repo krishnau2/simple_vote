@@ -1,0 +1,9 @@
+<table>
+  <tbody>
+    <% @latest_questions.each do |question| %>
+    <tr>
+      <td><%= link_to question.title, vote_url(:id => question.id) %> </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

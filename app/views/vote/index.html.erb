@@ -1,0 +1,20 @@
+<%= form_tag(:controller => 'vote', :action => 'create') do %>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong><%= @voting_question.title %></strong> </td>
+      </tr>
+      <tr>
+        <td><%= @voting_question.description %> </td>
+      </tr>
+      <% @options.each do |option| %>
+        <tr>
+          <td>
+            <%= radio_button_tag(:selected_option, option) %>
+            <%= option %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
